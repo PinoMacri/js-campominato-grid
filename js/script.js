@@ -30,9 +30,12 @@ for (i = 1; i <= 100; i++) {
     realGridChild.classList.add("cell", "flex", "center", "styleCell")
     const finalGenerate = realGrid.appendChild(realGridChild)
     finalGenerate.innerText = i;
-    let finalGenerateClick;
     finalGenerate.addEventListener("click", function () {
-        finalGenerateClick = realGridChild.classList.add("azzurro")
+        if (realGridChild.classList.contains("azzurro")) {
+            realGridChild.classList.remove("azzurro")
+        } else {
+            realGridChild.classList.add("azzurro")
+        }
         console.log(finalGenerate.innerText)
     })
 }
@@ -50,9 +53,12 @@ for (i = 1; i <= 81; i++) {
     realGridDue.classList.add("realGridDue", "flex", "center", "styleCell")
     const finalGenerateDue = difficileDue.appendChild(realGridDue)
     finalGenerateDue.innerText = i;
-    let finalGenerateClickDue;
     finalGenerateDue.addEventListener("click", function () {
-        finalGenerateClickDue = realGridDue.classList.add("azzurro")
+        if (realGridDue.classList.contains("azzurro")) {
+            realGridDue.classList.remove("azzurro")
+        } else {
+            realGridDue.classList.add("azzurro")
+        }
         console.log(finalGenerateDue.innerText)
     })
 }
@@ -70,9 +76,12 @@ for (i = 1; i <= 49; i++) {
     realGridTre.classList.add("realGridTre", "flex", "center", "styleCell")
     const finalGenerateTre = difficileTre.appendChild(realGridTre)
     finalGenerateTre.innerText = i;
-    let finalGenerateClickTre;
     finalGenerateTre.addEventListener("click", function () {
-        finalGenerateClickTre = realGridTre.classList.add("azzurro")
+        if (realGridTre.classList.contains("azzurro")) {
+            realGridTre.classList.remove("azzurro")
+        } else {
+            realGridTre.classList.add("azzurro")
+        }
         console.log(finalGenerateTre.innerText)
     })
 }
