@@ -1,3 +1,9 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 .flex {
     display: flex;
 }
@@ -60,19 +66,37 @@ div h1 {
 }
 button {
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     height: 50px;
     border-radius: 5px;
     margin: 20px
 }
+.align-center {
+    align-items: center;
+}
 div p {
-    padding: 15px;
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 10px;
 }
-body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+/*-------------------------------------------------------------*/
+.realGridDue {
+    width: calc(620px / 9 - 2px);
+    height: 60px;
+    border: 1px solid black;
 }
+.realGridDue:hover {
+    cursor: pointer;
+}
+/*-------------------------------------------------------------*/
+.realGridTre {
+    width: calc(620px / 7 - 2px);
+    height: 60px;
+    border: 1px solid black;
+}
+.realGridTre:hover {
+    cursor: pointer;
+}
+
